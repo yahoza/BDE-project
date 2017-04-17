@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link href="//fonts.googleapis.com/css?family=Alef&subset=latin" rel="stylesheet" type="text/css">
+        <style>
+            * {
+                font-family: 'Alef', sans-serif;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.13/b-1.2.4/b-html5-1.2.4/b-print-1.2.4/r-2.1.1/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jszip-2.5.0/pdfmake-0.1.18/dt-1.10.13/b-1.2.4/b-html5-1.2.4/b-print-1.2.4/r-2.1.1/datatables.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="red"></div>
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="logo-header.png" alt="Logo Exia"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="active" href={{path('accueil')}}>Accueil</a></li>
+                        <li><a href="{{path('activities')}}">Activités</a></li>
+                        <li><a href="{{path('boutique')}}">Boutique</a></li>
+                        <li><a href="#">"Etudiant"</a></li>
+                        <li><a href="#">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    <footer>
+        <div class="container">
+            <p>&copy; Groupe 3 | <a href="#">Mentions légales</a></p>
+        </div>
+    </footer>
+    </body>
+</html>
