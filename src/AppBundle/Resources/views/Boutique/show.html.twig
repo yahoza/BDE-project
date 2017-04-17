@@ -1,0 +1,49 @@
+{% extends "AppBundle::base.html.twig" %}
+
+{% block title %}Activités{% endblock %}
+
+{% block body %}
+
+<div class="col-md-offset-9 corpsMargin">
+	<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>&nbsp;
+	<a href="#">Votre panier</a>&nbsp;
+	<span>3</span><!-- nombre de produits dans le panier -->
+</div>
+<div class="col-md-8 col-md-offset-2 contenuCorps">
+	<div class="col-md-12">
+		<div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 imgProduit">
+			<img src="img/lunettes_150x130.png" alt="img Produit" title="Produit">
+		</div>
+		<table class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+			<tbody>
+				<tr>
+					<th>Référence</th>
+					<td>56csdger86vd</rd><!-- Référence du produit -->
+				</tr>
+				<tr>
+					<th>Nom</th>
+					<td>Lunettes CESI</td><!-- Nom du produit -->
+				</tr>
+				<tr>
+					<th>Prix</th>
+					<td>12.49&nbsp;€</td><!-- Référence du produit -->
+				</tr>
+				<tr>
+					<th>Quantitée</th>
+					<td><input type="input" name="qttProduct" value="1"></input></td><!-- Référence du produit -->
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="col-md-12">
+		<div>
+			<span>Descritpion</span>
+			<!-- texte de description du produit -->
+			<p>
+				nteger gravida consectetur elit, nec imperdiet ante malesuada vel. Duis sagittis velit non enim tincidunt sagittis a eu ex. In at rhoncus sem. Fusce velit diam, aliquet at nulla vitae, lacinia posuere lorem. Proin malesuada mi quis nunc lobortis commodo. Phasellus nec volutpat magna. Quisque suscipit ex in metus consequat, sit amet ullamcorper arcu laoreet. Fusce consectetur, ligula nec volutpat aliquam, sem metus feugiat justo, eget iaculis felis nibh rhoncus lectus. Mauris mattis massa at pretium mollis. Donec elementum vel orci eget sollicitudin. Nullam faucibus nibh sed posuere mollis. Duis ex erat, porttitor et venenatis sed, fringilla aliquam neque. Integer at varius magna. Aenean scelerisque ornare luctus.
+			</p>				
+		</div>
+	</div>
+</div>
+
+{% endblock %}
